@@ -2,6 +2,6 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-# Make sure the secret is at least 30 characters and all random, 
+# Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ActionController::Base.cookie_verifier_secret = 'cb779190a018a3469727bc80cadf85696d8bf542f0e0566732359593ac4dccca60b4ff9557884f052fccb6f5eb298ceaa86734c03c98e5e8a8ce0fefb1b51262';
+DanopiaNet::Application.config.secret_token = '4af313dd68d72456f9936d51988fa83213417c973a7543c1dd89545854c74a535d48ccce300d667af9000d72a68be502d4684156e47f22b9ab57eaf127129f11'
