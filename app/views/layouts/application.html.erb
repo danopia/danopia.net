@@ -14,40 +14,42 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <meta name="application-name" content="danopia.net">
-  <meta name="application-url" content="http://danopia.net">
+  <meta name="application-url" content="http://danopia.net/">
   <link rel="icon" href="/apple-touch-icon.png" sizes="57x57">
 
-  <link rel="stylesheet" href="/stylesheets/style.css?v=1">
+  <%= stylesheet_link_tag 'application' %>
 </head>
 
 <body>
-  <ul id="sidebar">
-    <li>
-      <h3>Pages</h3>
-      <ul class="links">
-        <li><a href="/pages/statement">Statement</a></li>
-        <li><a href="/pages/projects">Projects</a></li>
-        <li><a href="/pages/technical">Technical</a></li>
-        <li><a href="/pages/resume">Résumé</a></li>
-      </ul>
-    </li>
-    
-    <li>
-      <h3>Networking</h3>
-      <ul class="links">
-        <li><a href="http://facebook.com/daniel.lamando">Facebook</a></li>
-        <li><a href="http://twitter.com/danopia">Twitter</a></li>
-        <li><a href="https://github.com/danopia">Github</a></li>
-        <li><a href="http://danopia.deviantart.com/">DeviantART</a></li>
-        <li><a href="http://www.youtube.com/user/ddanopia">YouTube</a></li>
-        <li><a href="mailto:webmaster@danopia.net">Email</a></li>
-      </ul>
-    </li>
-  </ul>
+  <nav>
+    <ul id="sidebar">
+      <li>
+        <h3>Pages</h3>
+        <ul class="links">
+          <li><a href="/pages/statement">Statement</a></li>
+          <li><a href="/pages/projects">Projects</a></li>
+          <li><a href="/pages/technical">Technical</a></li>
+          <li><a href="/pages/resume">Résumé</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <h3>Networking</h3>
+        <ul class="links">
+          <li><a href="http://facebook.com/daniel.lamando">Facebook</a></li>
+          <li><a href="http://twitter.com/danopia">Twitter</a></li>
+          <li><a href="https://github.com/danopia">Github</a></li>
+          <li><a href="http://danopia.deviantart.com/">DeviantART</a></li>
+          <li><a href="http://www.youtube.com/user/ddanopia">YouTube</a></li>
+          <li><a href="mailto:webmaster@danopia.net">Email</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
   <div id="container">
-    <a id="me" href="http://fav.me/d373m1v" style="float: right; padding-left: 15px;">
-      <img src="http://lh4.ggpht.com/_hhDsyPIyHKY/TTC5lIgXhOI/AAAAAAAAAGo/N3H_wTuroIQ/s150/Chief.jpg" width="119" height="150" alt="A photo of me" />
+    <a id="me" href="http://fav.me/d373m1v">
+      <%= image_tag 'chief.jpg', :size => '119x150', :alt => 'A photo of me' %>
     </a>
     
     <header>
