@@ -1,16 +1,12 @@
 <!doctype html>  
 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Daniel Lamando</title>
-  <meta name="description" content="Ruby on Rails: Welcome aboard">
+  <title><%= yield :title %> - Daniel Lamando</title>
+  <meta name="description" content="My name is Daniel Lamando, but I normally go by danopia on the Internet. One of my favorite things (besides math) is computer programing.">
   <meta name="author" content="Daniel Lamando">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +14,10 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <meta name="application-name" content="danopia.net">
-  <!--meta name="application-url" content="http://danopia.net"-->
+  <meta name="application-url" content="http://danopia.net">
   <link rel="icon" href="/apple-touch-icon.png" sizes="57x57">
 
-  <link rel="stylesheet" href="/stylesheets/style.css?v=2">
-  <script src="/javascripts/libs/modernizr-1.6.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css?v=1">
 </head>
 
 <body>
@@ -44,6 +39,7 @@
         <li><a href="http://twitter.com/danopia">Twitter</a></li>
         <li><a href="https://github.com/danopia">Github</a></li>
         <li><a href="http://danopia.deviantart.com/">DeviantART</a></li>
+        <li><a href="http://www.youtube.com/user/ddanopia">YouTube</a></li>
         <li><a href="mailto:webmaster@danopia.net">Email</a></li>
       </ul>
     </li>
@@ -51,8 +47,13 @@
 
   <div id="container">
     <a id="me" href="http://fav.me/d373m1v" style="float: right; padding-left: 15px;">
-        <img src="http://lh4.ggpht.com/_hhDsyPIyHKY/TTC5lIgXhOI/AAAAAAAAAGo/N3H_wTuroIQ/s150/Chief.jpg" width="119" height="150" alt="A photo of me" />
+      <img src="http://lh4.ggpht.com/_hhDsyPIyHKY/TTC5lIgXhOI/AAAAAAAAAGo/N3H_wTuroIQ/s150/Chief.jpg" width="119" height="150" alt="A photo of me" />
     </a>
+    
+    <header>
+      <h2>Daniel Lamando</h2>
+      <h1><%= yield :title %></h1>
+    </header>
     
 <%= yield %>
   </div> <!-- end of #container -->
@@ -63,28 +64,6 @@
     <p>released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></p>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-  
-  
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="/javascripts/plugins.js"></script>
-  <script src="/javascripts/script.js"></script>
-  <!-- end concatenated and minified scripts-->
-  
-  
-  <!--[if lt IE 7 ]>
-    <script src="javascripts/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-  <![endif]-->
-
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="/javascripts/profiling/yahoo-profiling.min.js"></script>
-  <script src="/javascripts/profiling/config.js"></script>
-  <!-- end profiling code -->
-
-
-  <!-- change the UA-XXXXX-X to be your site's ID -->
   <script>
     var _gaq = [['_setAccount', 'UA-20757280-1'], ['_trackPageview']];
     
