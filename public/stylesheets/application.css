@@ -163,7 +163,7 @@ header h2 {
 footer {
   width: 525px;
   float: left;
-  padding-top: 1em;
+  padding: 1em 15px 0 15px;
   
   text-align: center;
   font-size: 10px;
@@ -197,7 +197,7 @@ footer {
 
 #me {
   float: right;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 
@@ -217,8 +217,8 @@ footer {
 
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a:after { content: " (" attr(href) ")"; } 
+  #container a, a:visited { color: #444 !important; text-decoration: underline; }
+  #container p a:after, #container ul a:after { content: " (" attr(href) ")"; } 
   abbr:after { content: " (" attr(title) ")"; }
   .ir a:after { content: ""; }  
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
@@ -227,5 +227,9 @@ footer {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
+  
+  nav { display: none; }
+  body, #container { width: auto; border: none; }
+  footer { width: 100%; }
 }
 
