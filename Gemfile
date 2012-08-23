@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.0.7'
 gem 'rake', '0.9.2.2'
+gem 'thin' # ALLL the performance!
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
